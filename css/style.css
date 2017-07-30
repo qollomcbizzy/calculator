@@ -1,5 +1,9 @@
 h1{
   color:blue;
+  text-align: center;
+}
+h3{
+  color: aquamarine;
 }
 #thankyou p {
   color :black ;
@@ -20,11 +24,11 @@ span.email:hover{
   cursor: pointer;
 }
 #output{
-  height:60px;
-  width:120px;
+  width: 200px;
   border:1px solid grey;
   text-align:center;
-  padding-top:10px;
+  padding-top:px;
+  padding-bottom: 3px;
   border-radius: 10px;
 
 }

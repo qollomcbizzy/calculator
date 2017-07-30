@@ -10,42 +10,44 @@
 </head>
 <body>
   <div class="row">
-    <div class="col-md-4 col-md-offset-4">
+    <div class="col-md-6 col-md-offset-4">
       <h1>calculator</h1>
     </div>
   </div>
   <div class="container">
-    <h3>additon</h3>
+    <h3 class="col-md-6 col-md-offset-2">Enter your numbers down below</h3>
     <!--form for the addition-->
   <form id="add">
     <div class="row">
-      <div class="form-group col-md-4">
+      <div class="form-group col-md-6 col-md-offset-2">
         <label for="add1">1st number:</label>
         <input type="text" id="add1" class="form-control">
       </div>
     </div>
     <div class="row">
-      <div class="form-group col-md-4">
+      <div class="form-group col-md-6 col-md-offset-2">
         <label for="add2">2nd number:</label>
         <input type="text" id="add2" class="form-control">
       </div>
     </div>
     <div class="row">
       <!--clear fields-->
-      <button type="submit" class="btn btn-primary" id="clearing">Clear</button>
+      <div class="col-md-6 col-md-offset-2">
+        <button type="submit" class="btn btn-primary" id="clearing">Clear</button>
         <!--for subtraction-->
-      <button type="submit" class="btn" id="adding">ADD</button>
+        <button type="submit" class="btn" id="adding">ADD</button>
       <!--for subtraction-->
-      <button type="submit" class="btn" id="subtracting">Subtract</button>
+        <button type="submit" class="btn" id="subtracting">Subtract</button>
       <!--for division-->
-      <button type="submit" class="btn" id="dividing">Divide</button>
+        <button type="submit" class="btn" id="dividing">Divide</button>
       <!--form for the multiplication-->
-      <button type="submit" class="btn" id="multiplying">multiply</button>
+        <button type="submit" class="btn" id="multiplying">multiply</button>
+      </div>
     </div>
   </form>
    <!--div to show the results-->
-  <div id="output">
-     <h3>ANSWER</h3>
+  <div id="output" class="col-md-offset-4">
+     <h3>your answer</h3>
   </div>
     <!--input type for color
     <div class="form-group col-md-4">
