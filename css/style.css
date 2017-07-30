@@ -8,6 +8,7 @@ h1{
   font-style: oblique;
   font-variant: small-caps;
   font-family: serif;
+  display: none;
 }
 span.email{
   color :grey;
