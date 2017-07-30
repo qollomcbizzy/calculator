@@ -37,6 +37,8 @@ $(document).ready(function(){
       var result=simpleCalculator.multiplication(number1,number2);
       $("#output").text(result);
     });
+    //form for entering the response comment
+    $("form#yourresponse")
     //clearing fields for the submit form
     $("button#clearing").click(function(){
       $("form#add")[0].reset();
