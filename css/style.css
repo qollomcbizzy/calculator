@@ -8,10 +8,23 @@ h1{
   font-style: oblique;
   font-variant: small-caps;
   font-family: serif;
-  display: none;
 }
 span.email{
   color :grey;
   font-style: italic;
   font-weight: bold;
+}
+span.email:hover{
+  text-decoration: underline;
+  color: aquamarine;
+  cursor: pointer;
+}
+#output{
+  height:60px;
+  width:120px;
+  border:1px solid grey;
+  text-align:center;
+  padding-top:10px;
+  border-radius: 10px;
+
 }

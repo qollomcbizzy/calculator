@@ -37,16 +37,6 @@ $(document).ready(function(){
       var result=simpleCalculator.multiplication(number1,number2);
       $("#output").text(result);
     });
-    //form for entering the response comment
-    $("form#yourResponse").submit(function(event){
-      event.preventDefault;
-      var inputtedEmail=$("input#youremail").val();
-      var inputtedResponse=$("textarea#yourcomment").val();
-      $("#yourResponse").hide(),
-      $("#thankyou").show(function(){
-        $(".email").append(inputtedEmail);
-      });
-    });
     //clearing fields for the submit form
     $("button#clearing").click(function(){
       $("form#add")[0].reset();
