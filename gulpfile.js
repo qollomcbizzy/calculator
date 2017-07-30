@@ -1,6 +1,7 @@
 var gulp =require('gulp');
 var concat =require('gulp-concat');
 var browserify = require('browserify');
+var uglify=require('gulp-uglify');
 var source = require('vinyl-source-stream');
 gulp.task('concatInterface',function(){
   return gulp.src(['./js/calculator-interface.js','./js/response.js'])
@@ -22,4 +23,10 @@ gulp.task('calcBrowserify',['concatInterface'], function() {
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));
+});
+//lets minify how js by deleting unncessary file after concatenating and browserified
+gulp.task('minifyscripts',['calcBrowserify'],function(){
+  return gulp.src('./build/js/app.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('./build/js'));
 });
