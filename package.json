@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "[test:\"error:not typescript found\"]"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qollomcbizzy/calculator.git"
+  },
+  "author": "collins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qollomcbizzy/calculator/issues"
+  },
+  "homepage": "https://github.com/qollomcbizzy/calculator#readme"
+}
