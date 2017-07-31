@@ -1,3 +1,4 @@
+//var del =require('gulp-del');
 var utilities = require('gulp-util');
 var gulp =require('gulp');
 var concat =require('gulp-concat');
@@ -5,9 +6,10 @@ var browserify = require('browserify');
 var uglify=require('gulp-uglify');
 var source = require('vinyl-source-stream');
 var buildProduction = utilities.env.production;
+//var jshint = require('gulp-jshint');
 //creates an environment for our build
 gulp.task('concatInterface',function(){
-  return gulp.src(['./js/calculator-interface.js','./js/response.js'])
+  return gulp.src(['./js/*-interface.js'])
   .pipe(concat('allconcact.js'))
   .pipe(gulp.dest('./tmp'))
 });
@@ -33,8 +35,13 @@ gulp.task('minifyscripts',['calcBrowserify'],function(){
   .pipe(uglify())
   .pipe(gulp.dest('./build/js'));
 });
-//lets create a build task that does after we have minified
-gulp.task('build',function() {
+//lets create a gulp task taht would clean the other documents that are unneccessary
+/*gulp.task("clean", function(){
+  return del(['build', 'tmp']);
+});*/
+
+//lets create a build task
+gulp.task('build',/*['clean']*/function() {
   if(buildProduction){
     gulp.start('minifyscripts');
   }
@@ -42,3 +49,10 @@ gulp.task('build',function() {
     gulp.start('calcBrowserify');
   }
 });
+//jshint to check for errors
+/*gulp.task('jshint', function(){
+  return gulp.src(['js/*.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+*/

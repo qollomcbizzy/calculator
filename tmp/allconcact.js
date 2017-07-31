@@ -54,3 +54,7 @@ $(document).ready(function(){
         "for your repsonse we really appreciate that for our improvement</p>");
   });
 });
+
+$(document).ready(function(){
+  $("#time").text(moment());
+});

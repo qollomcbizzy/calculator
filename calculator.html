@@ -4,15 +4,29 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bower_components/animate.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet">
+  <script src="bower_components/moment/min/moment.min.js"></script>
   <script src="build/js/app.js"></script>
   <title>calculator</title>
 </head>
 <body>
   <div class="row">
-    <div class="col-md-6 col-md-offset-4">
-      <h1>calculator</h1>
+    <div class="col-md-6 col-md-offset-2">
+      <h1><u>calculator</u></h1>
     </div>
+  </div>
+  <div class="row">
+      <div class="row">
+        <div class="col-md-3 col-md-offset-5">
+          <h3 id="timelabel">Your time</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-4" id="timezone">
+           <h4 id="time"></h4>
+         </div>
+      </div>
   </div>
   <div class="container">
     <h3 class="col-md-6 col-md-offset-2">Enter your numbers down below</h3>
