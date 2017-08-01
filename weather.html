@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!--<link rel="stylesheet" href="bower_components/animate.min.css">-->
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="build/js/app.js"></script>
+  <title>your weather</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <h3><u>The weather at the place entered</u></h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offest-1">
+          <label>Enter the current city that your are in</label>
+          <input type="text" class="form-control" id="yourcity">
+          <button type="submit" class="btn btn-success" id="getweather">Enter</button>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-2" id="showweather">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

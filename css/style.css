@@ -42,3 +42,9 @@ span.email:hover{
   border-radius: 10px;
 
 }
+#showweather{
+  color: blue;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
