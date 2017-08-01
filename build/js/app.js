@@ -1,4 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+exports.apiKey="64c5c62d9d78c7974a7183913fd84e58";
+
+},{}],2:[function(require,module,exports){
 //backend or the business logic
 //this is for the addition
 function calc(skinName){
@@ -25,7 +28,7 @@ return number1*number2;
 };
 exports.calcModule=calc;
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 var calc=require("./../js/script.js").calcModule;
 $(document).ready(function(){
   //for addition
@@ -87,7 +90,7 @@ $(document).ready(function(){
   $("#time").text(moment());
 });
 
-var apiKey ="64c5c62d9d78c7974a7183913fd84e58";
+var apiKey = require('./../.env').apiKey;
 $(document).ready(function(){
   $("#getweather").click(function(){
     var inputtedCity=$("input#yourcity").val();
@@ -107,4 +110,4 @@ $(document).ready(function(){
   })
 });
 
-},{"./../js/script.js":1}]},{},[2]);
+},{"./../.env":1,"./../js/script.js":2}]},{},[3]);

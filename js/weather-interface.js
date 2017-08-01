@@ -1,4 +1,4 @@
-var apiKey ="64c5c62d9d78c7974a7183913fd84e58";
+var apiKey = require('./../.env').apiKey;
 $(document).ready(function(){
   $("#getweather").click(function(){
     var inputtedCity=$("input#yourcity").val();
