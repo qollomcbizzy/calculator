@@ -48,3 +48,10 @@ span.email:hover{
   border: 1px solid grey;
   border-radius: 2px;
 }
+#maprect{
+  border: 2px solid grey;
+   fill:blue;
+   opacity:0.4;
+   stroke:grey;
+   stroke-width:5
+}

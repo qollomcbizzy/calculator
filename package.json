@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/qollomcbizzy/calculator/issues"
   },
-  "homepage": "https://github.com/qollomcbizzy/calculator#readme"
+  "homepage": "https://github.com/qollomcbizzy/calculator#readme",
+  "devDependencies": {
+    "del": "^3.0.0"
+  }
 }

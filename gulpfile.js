@@ -1,4 +1,4 @@
-//var del =require('gulp-del');
+var del =require('gulp-del');
 var utilities = require('gulp-util');
 var gulp =require('gulp');
 var concat =require('gulp-concat');
@@ -38,12 +38,12 @@ gulp.task('minifyscripts',['calcBrowserify'],function(){
   .pipe(gulp.dest('./build/js'));
 });
 //lets create a gulp task taht would clean the other documents that are unneccessary
-/*gulp.task("clean", function(){
+gulp.task("clean", function(){
   return del(['build', 'tmp']);
-});*/
+});
 
 //lets create a build task
-gulp.task('build',/*['clean']*/function() {
+gulp.task('build',['clean'],function() {
   if(buildProduction){
     gulp.start('minifyscripts');
   }
